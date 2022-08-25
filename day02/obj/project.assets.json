@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Farid\\Materi Bootcamp\\week 2\\day01\\CSharpLogic\\CSharpLogic.csproj",
-      "projectName": "CSharpLogic",
-      "projectPath": "C:\\Farid\\Materi Bootcamp\\week 2\\day01\\CSharpLogic\\CSharpLogic.csproj",
+      "projectUniqueName": "C:\\Farid\\Materi Bootcamp\\week 2\\day01\\CSharpLogic\\day02\\day02.csproj",
+      "projectName": "day02",
+      "projectPath": "C:\\Farid\\Materi Bootcamp\\week 2\\day01\\CSharpLogic\\day02\\day02.csproj",
       "packagesPath": "C:\\Users\\CODE.ID\\.nuget\\packages\\",
-      "outputPath": "C:\\Farid\\Materi Bootcamp\\week 2\\day01\\CSharpLogic\\obj\\",
+      "outputPath": "C:\\Farid\\Materi Bootcamp\\week 2\\day01\\CSharpLogic\\day02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CODE.ID\\AppData\\Roaming\\NuGet\\NuGet.Config",

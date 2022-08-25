@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "CSharpLogic/1.0.0": {
+      "day02/1.0.0": {
         "runtime": {
-          "CSharpLogic.dll": {}
+          "day02.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "CSharpLogic/1.0.0": {
+    "day02/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
