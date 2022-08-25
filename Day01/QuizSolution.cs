@@ -351,6 +351,53 @@ namespace Day01
             Console.WriteLine($"Total kata yang muncul : {count.ToString()} dari text : {input}");
         }
 
+        //1
+        public static void GuessNumber()
+        {
+            Console.WriteLine("Guess magic number between 0-20");
+            Random random = new Random();
+            int number = random.Next(0, 20);
 
+
+            int guess;
+            bool answer = true;
+            do
+            {
+                do
+                {
+                printguess:
+                    Console.Write("Enter you guess ? ");
+                    string line = Console.ReadLine().Trim();
+                    guess = Convert.ToInt32(line);
+
+                    // cek kondisi
+                    if (guess == number)
+                    {
+                        Console.WriteLine("Tebakan kamu benar, angka yg ditebak " + guess);
+                        Console.WriteLine("Tebak lagi ?");
+                        string input = Console.ReadLine();
+                        if (string.Equals(input, "y"))
+                        {
+                            number = random.Next(0, 20);
+                            goto printguess;
+                        }
+                        else
+                        {
+                            answer = false;
+                            Console.WriteLine("Your quit");
+                        }
+                    }
+                    else if (guess > number)
+                    {
+                        Console.WriteLine("your guess is too hight");
+                    }
+                    else
+                    {
+                        Console.WriteLine("your guess is too low");
+                    }
+                } while (number != guess);
+            } while (answer);
+
+        }
     }
 }
