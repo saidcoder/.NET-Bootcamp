@@ -89,7 +89,7 @@ namespace QuizLogic02
                 Console.WriteLine();
                 Console.WriteLine($"Rotate ke {j} :");
                 int last = arr[arr.Length - 1];
-                for (int i = arr.Length - 1 ; i > 0;  i--)
+                for (int i = arr.Length - 1; i > 0; i--)
                 {
                     arrRotate[i] = arr[i - 1];
 
@@ -112,6 +112,132 @@ namespace QuizLogic02
             Console.WriteLine("After Remove");
             Array.Sort(uniqueArray);
             return uniqueArray;
+        }
+
+        //no 9
+        public static int[,] MatrixDiagonalReverse(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int counter = baris;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    // diagonal baris == colom
+                    if (i == j)
+                    {
+                        matrix[i, j] = counter--;
+                    }
+                    else if (j > i)
+                    {
+                        matrix[i, j] = 10;
+                    }
+                    else if (i > j)
+                    {
+                        matrix[i, j] = 20;
+                    }
+                }
+            }
+            return matrix;
+        }
+
+        //no 10
+        public static int[,] MatrixDiagonalSum(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int counter = baris;
+            int sum = 0;
+
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    // diagonal baris == colom
+                    if (i == j)
+                    {
+                        matrix[i, j] = counter--;
+                        sum += matrix[i, j];
+                    }
+                }
+            }
+            //DisplayMatrix(matrix);
+            Console.WriteLine($"Total Sum Diagonal Value : {sum}");
+            return matrix;
+        }
+
+        //no 11
+        public static int[,] MatrixSquare(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int n = baris - 1;
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(0); j++)
+                {
+                    matrix[i, j] = i + j;
+                    if (i != 0 && j != 0)
+                    {
+                        if (i != n && j != n)
+                        {
+                            matrix[i, j] = 0;
+                        }
+
+                    }
+
+                }
+            }
+            return matrix;
+        }
+
+        //12
+        public static int[,] MatrixSumSquare(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int n = baris - 1;
+            int sum = 0;
+            int sum2 = 0;
+            //int loop = 0;
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(0); j++)
+                {
+                    if (i != n && j != n)
+                    {
+                        matrix[i, j] = i + j;
+                        if (j <= n)
+                        {
+                            sum += matrix[i, j];
+                            matrix[i, n] = sum;
+                            matrix[n, i] = sum;
+
+                            if (i == j)
+                            {
+                                sum2 += matrix[i, j];
+                                matrix[n, n] = sum2;
+                            }
+
+                            if (j == n - 1)
+                            {
+                                sum = 0;
+                            }
+                        }
+                    }
+                }
+            }
+            return matrix;
+        }
+
+        public static void DisplayMatrix(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++) //looping baris
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++) //looping colom
+                {
+                    Console.Write(matrix[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
         }
 
         public static void DisplayArray(int[] arr)
