@@ -11,7 +11,7 @@ namespace Day03
         public static void no1()
         {
             var input1 = new List<int> { 1, 2, 5, 6, 9 };
-            var input2 = new List<int> { 1, 2, 3, 4};
+            var input2 = new List<int> { 1, 2, 3, 4 };
             Console.WriteLine("========NO 1===========");
             Console.Write("Input A : ");
             input1.ForEach(Console.Write);
@@ -19,7 +19,7 @@ namespace Day03
             Console.Write("Input B : ");
             input2.ForEach(Console.Write);
             Console.WriteLine();
-            Console.WriteLine("===================");
+            Console.WriteLine("======================");
 
             var irisanAB = input1.Intersect(input2);
             Console.Write("Tampilkan element yang sama (A irisan B) : ");
@@ -29,8 +29,8 @@ namespace Day03
             }
             Console.WriteLine("");
 
-         
-            var unionAB = input2.Union(input1); 
+
+            var unionAB = input2.Union(input1);
             Console.Write("Merge dan tampilkan element (A union B) : ");
             foreach (var item in unionAB)
             {
@@ -57,9 +57,99 @@ namespace Day03
             Console.WriteLine("");
         }
 
-        public static void no2()
+
+        //No 2
+        public static List<T> ReverseList<T>(ref List<T> list)
         {
+            var input = new List<T>();
+
+            Console.WriteLine("Input : ");
+            foreach (var item in list)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("Return : ");
+
+            foreach (var item in list)
+            {
+                input.Add(item);
+            }
+
+            List<T> revers = Enumerable.Reverse(input).ToList();
+            return revers;
+        }
+
+        //No 3
+        public static List<T> RemoveDuplicate<T>(ref List<T> list)
+        {
+            var input = new List<T>();
+            Console.WriteLine("Input : ");
+            foreach (var item in list)
+            {
+                Console.Write($"{item} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Return : ");
+
+            return list.Distinct().ToList();
+        }
+
+        //No 4
+        public static void FindLongestSequence()
+        {
+            /*var input = new List<T>();
+            int count = 1;
+            int longestCount = 1;
+
+            for (int i = 0; i < list.Count; i++)
+            {
+               
+                Console.Write(list[i]);
+            }*/
+            var list = new List<int> { 1, 1, 2, 2, 2, 3, 3, 3, 3 };
+
+            int longestSequenceLength = 0;
+            int startIndexOfLongestSequence = 0;
+            int currentSequenceLength = 0;
+            int currentStartSequenceIndex = 0;
+
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (i == 0 || list[i] != list[i - 1] + 1)
+                {
+                    currentSequenceLength = 1;
+                    currentStartSequenceIndex = i;
+                }
+                else
+                {
+                    currentSequenceLength++;
+                }
+
+                if (currentSequenceLength > longestSequenceLength)
+                {
+                    longestSequenceLength = currentSequenceLength;
+                    startIndexOfLongestSequence = currentStartSequenceIndex;
+                }
+            }
+
+            Console.WriteLine(string.Join(",", list.Skip(startIndexOfLongestSequence)
+               .Take(longestSequenceLength)));
+
 
         }
+
+
+        public static List<T> DisplayList<T>(ref List<T> list)
+        {
+            var myList = new List<T>();
+            foreach (var item in list)
+            {
+                Console.Write($"{item} ");
+            }
+            return myList;
+        }
+
     }
 }

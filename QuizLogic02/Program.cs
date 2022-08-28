@@ -30,7 +30,7 @@ day02.DisplayArray(day02.SwitchArray(myArray));*/
 //day02.CountDuplicateArray();
 
 //No.6
-day02.ArrayMaker();
+//day02.ArrayMaker();
 
 //no 7
 //day02.DisplayArray(day02.DuplicateArray());
