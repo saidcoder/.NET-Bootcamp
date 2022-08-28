@@ -45,11 +45,12 @@ namespace QuizLogic02
         public static int[] SwitchArray(int[] arr)
         {
             int[] arrRotate = new int[arr.Length];
+            var temp = arr[0];
             for (int i = 0; i < arr.Length - 1; i++)
             {
                 arrRotate[i] = arr[i + 1];
             }
-            arrRotate[arr.Length - 1] = arr[0];
+            arrRotate[arr.Length - 1] = temp;
             return arrRotate;
         }
 
@@ -101,6 +102,67 @@ namespace QuizLogic02
             return arrRotate;
         }
 
+        //No 5
+        public static int[] CountDuplicateArray()
+        {
+            int[] array = { 5, 2, 30, 12, 10, 5, 2, 10, 5 };
+            Array.Sort(array);
+            int count;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                count = 0;
+                for (int j = 0; j <= array.Length - 1; j++)
+                {
+                    if (array[i] == array[j])
+                    {
+                        count++;
+                    }
+                }
+                if (i < array.Length - 1 && array[i] != array[i + 1])
+                {
+                    Console.WriteLine($"{array[i]} muncul sebanyak {count}");
+                }
+                else if (i == array.Length - 1)
+                {
+                    Console.WriteLine($"{array[i]} muncul sebanyak {count}");
+                }
+
+            }
+            return array;
+        }
+
+
+        //No 6
+        public static void ArrayMaker()
+        {
+            Console.WriteLine("Before Marker");
+            int[] array = { 1, 5, 3, 7, 8, 5, 1 };
+            DisplayArray(array);
+            Console.WriteLine();
+            Console.WriteLine("After Marker");
+            Array.Sort(array);
+            for (int i = 0; i < array.Length; i++)
+            {
+                int x = array[i];
+                if (i < array.Length - 1 && x == array[i + 1])
+                {
+                    for (int j = i; j < array.Length; j++)
+                    {
+                        if (j == array.Length - 1)
+                        {
+                            array[j] = -1;
+                        }
+                        else
+                        {
+                            array[j] = array[j + 1];
+                        }
+                    }
+                }
+            }
+            DisplayArray(array);
+        }
+
         //no 7
         public static int[] DuplicateArray()
         {
@@ -112,6 +174,48 @@ namespace QuizLogic02
             Console.WriteLine("After Remove");
             Array.Sort(uniqueArray);
             return uniqueArray;
+        }
+
+        //No 8
+        public static void CountChar()
+        {
+            Console.WriteLine("=======================");
+            var alpa = "abcdefghijklmnopqrstuvwxyz";
+            Random rand = new Random();
+            char[] array = new char[100];
+            for (int i = 0; i < 100; i++)
+            {
+                array[i] = alpa[rand.Next(0, 26)];
+            }
+            int count;
+            foreach (var item in array)
+            {
+                Console.Write($"{ item } ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("========Result========");
+            Array.Sort(array);
+            for (int i = 0; i < array.Length; i++)
+            {
+                count = 0;
+                for (int j = 0; j <= array.Length - 1; j++)
+                {
+                    if (array[i] == array[j])
+                    {
+                        count++;
+                    }
+                }
+                if (i < array.Length - 1 && array[i] != array[i + 1])
+                {
+                    Console.Write($"{count}{array[i]} ");
+                }
+                else if (i == array.Length - 1)
+                {
+                    Console.Write($"{count}{array[i]} ");
+                }
+
+            }
+
         }
 
         //no 9
@@ -226,6 +330,31 @@ namespace QuizLogic02
                 }
             }
             return matrix;
+        }
+
+        //No 15
+        public static int StudentQuiz(char[,] soaljawaban, char[] kunci)
+        {
+            char[,] jawaban = soaljawaban;
+            char[] kunciJawaban = kunci;
+            int count = 0;
+
+            for (int i = 0; i < jawaban.GetLength(0); i++)
+            {
+                count = 0;
+                Console.Write($"Jawaban Siswa {i} yang benar : ");
+                for (int j = 0; j < jawaban.GetLength(1); j++)
+                {
+                    //Console.Write($"{jawaban[i,j]}");
+                    if (jawaban[i, j] == kunciJawaban[j])
+                    {
+                        count += 1;
+                    }
+                }
+                Console.WriteLine(count);
+            }
+
+            return count;
         }
 
         public static void DisplayMatrix(int[,] matrix)

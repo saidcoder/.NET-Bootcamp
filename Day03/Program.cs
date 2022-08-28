@@ -7,7 +7,7 @@
 //MyCollections.InitQueue();
 
 //declare List<T>
-var list = new List<string>() { "Asep", "Budi", "Charlie" };
+/*var list = new List<string>() { "Asep", "Budi", "Charlie" };
 var student = MyCollections.GetStudent(ref list);
 
 foreach (var item in student)
@@ -20,4 +20,9 @@ var myNumbers = MyCollections.GetStudent(ref numbers);
 foreach (var item in myNumbers)
 {
     Console.WriteLine($"{item}");
-}
+}*/
+
+//No 1
+QuizLogic04.no1();
+
+Console.ReadLine();
