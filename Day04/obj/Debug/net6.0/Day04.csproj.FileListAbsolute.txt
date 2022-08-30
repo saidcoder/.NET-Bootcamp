@@ -1,0 +1,15 @@
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\bin\Debug\net6.0\Day04.exe
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\bin\Debug\net6.0\Day04.deps.json
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\bin\Debug\net6.0\Day04.runtimeconfig.json
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\bin\Debug\net6.0\Day04.dll
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\bin\Debug\net6.0\Day04.pdb
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\Day04.csproj.AssemblyReference.cache
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\Day04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\Day04.AssemblyInfoInputs.cache
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\Day04.AssemblyInfo.cs
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\Day04.csproj.CoreCompileInputs.cache
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\Day04.dll
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\refint\Day04.dll
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\Day04.pdb
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\Day04.genruntimeconfig.cache
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\Day04\obj\Debug\net6.0\ref\Day04.dll

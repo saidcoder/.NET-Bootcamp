@@ -108,35 +108,31 @@ namespace Day03
                
                 Console.Write(list[i]);
             }*/
-            var list = new List<int> { 1, 1, 2, 2, 2, 3, 3, 3, 3 };
+            var list = new List<int> { 7, 2, 7, 1, 2, 5, 7, 1 };
 
-            int longestSequenceLength = 0;
+            /*int longestSequenceLength = 0;
             int startIndexOfLongestSequence = 0;
             int currentSequenceLength = 0;
-            int currentStartSequenceIndex = 0;
+            int currentStartSequenceIndex = 0;*/
+            int n = 1;
 
             for (int i = 0; i < list.Count; i++)
             {
-                if (i == 0 || list[i] != list[i - 1] + 1)
+                if (list[i] == list.Count - 1)
                 {
-                    currentSequenceLength = 1;
-                    currentStartSequenceIndex = i;
+                    n = 0;
                 }
-                else
+                if (list[i] == list[i + n] - 1)
                 {
-                    currentSequenceLength++;
+                    Console.Write(list[i] + " ");
+                    Console.Write(list[i+1] + " ");
                 }
+                /*else if (list[i] == list.Count-1)
+                {
+                    Console.Write(list[i]+" ");
+                }*/
 
-                if (currentSequenceLength > longestSequenceLength)
-                {
-                    longestSequenceLength = currentSequenceLength;
-                    startIndexOfLongestSequence = currentStartSequenceIndex;
-                }
             }
-
-            Console.WriteLine(string.Join(",", list.Skip(startIndexOfLongestSequence)
-               .Take(longestSequenceLength)));
-
 
         }
 
