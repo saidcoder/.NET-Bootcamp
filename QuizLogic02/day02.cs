@@ -332,6 +332,46 @@ namespace QuizLogic02
             return matrix;
         }
 
+        //No 13
+        public static int[,] No13(int baris, int kolom)
+        {
+            int[,] matrix = new int[baris, kolom];
+            int counter = baris;
+            int vertikal = 29;
+            int horizontal = 0;
+            int n = -1;
+            int kelipatan = 2;
+            for (int i = matrix.GetLength(0)-1; i >= 0; i--)
+            {
+                n++;
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    // diagonal baris == colom
+                    if (j == n)
+                    {
+                        if (i != 3 && j != 3)
+                        {
+                            matrix[i, j] = kelipatan;
+                            kelipatan += 3;
+                        }
+                        else
+                        {
+                            matrix[i, j] = 3;
+                        }
+                    }
+                    //vertikal
+
+
+                    //horizontal
+                    else if (i == matrix.GetLength(0) - 1)
+                    {
+                        matrix[i, j] = counter--;
+                    }
+                }
+            }
+            return matrix;
+        }
+
         //No 15
         public static int StudentQuiz(char[,] soaljawaban, char[] kunci)
         {

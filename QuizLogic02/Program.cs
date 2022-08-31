@@ -55,6 +55,10 @@ day02.DisplayMatrix(myMatrix);*/
 day02.DisplayMatrix(myMatrix);*/
 WriteLine();
 
+//No 13
+var my13 = day02.No13(7, 7);
+day02.DisplayMatrix(my13);
+
 //No 15
 /*char[,] myJawaban = {
                     { 'A','B','A','C','C','D','E','E','A','D'},

@@ -39,6 +39,8 @@ QuizLogic04.DisplayList(ref Duplicate);*/
 //No 4
 /*var list = new List<int>() { 7, 2, 7, 1, 2, 5, 7, 1 };
 var find = QuizLogic04.FindLongestSequence(ref list);*/
-QuizLogic04.FindLongestSequence();
+//QuizLogic04.FindLongestSequence();
+
+//No 5
 
 Console.ReadLine();
