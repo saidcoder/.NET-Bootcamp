@@ -1,0 +1,15 @@
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\bin\Debug\net6.0\FinalTest.exe
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\bin\Debug\net6.0\FinalTest.deps.json
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\bin\Debug\net6.0\FinalTest.runtimeconfig.json
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\bin\Debug\net6.0\FinalTest.dll
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\bin\Debug\net6.0\FinalTest.pdb
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\FinalTest.csproj.AssemblyReference.cache
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\FinalTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\FinalTest.AssemblyInfoInputs.cache
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\FinalTest.AssemblyInfo.cs
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\FinalTest.csproj.CoreCompileInputs.cache
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\FinalTest.dll
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\refint\FinalTest.dll
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\FinalTest.pdb
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\FinalTest.genruntimeconfig.cache
+C:\Farid\Materi Bootcamp\week 2\day01\CSharpLogic\FinalTest\obj\Debug\net6.0\ref\FinalTest.dll
